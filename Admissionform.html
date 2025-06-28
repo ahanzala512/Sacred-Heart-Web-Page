@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+        .admission{
+        border:5px dotted white;
+        border-radius:5px;
+        background-color: black;
+        padding:10px;
+        color:white;
+
+       }
+       fieldset{
+        box-shadow: 3px 3px 2px grey;
+        padding:20px;
+        border:2px solid white;
+        width:95%;
+        position:relative;
+        left:10px;
+       }
+
+       h1{
+        text-shadow:4px 4px 2px red;
+        
+
+       }
+       #button{
+        
+        width:150px;
+        padding:5px;
+        background-color: darkmagenta;
+        color:white;
+       
+        border-radius: 5px;
+        box-shadow:5px 5px 2px white;
+        position:relative;
+        left:500px;
+
+        
+       }
+         
+       input{
+        width:50%;
+        border:3px solid black;
+        outline: 1px solid white;
+       }
+       #gender{
+        width:20px;
+       }
+       #declaration{
+        width:10px;
+       }
+       a{
+        color:white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <div class="admission" id="admission">
+        <a href="D:\analyze infotech\CSS\miniproject\homepage.html.html"  >Return to Homepage</a>
+        <h1 align="center" >Admission Form</h1>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            Full Name:<input type="text" ><br><br>
+            Date of Birth:<input type="date"><br><br>
+            Gender:<input type="radio" name="m" id="gender">Male
+            <input type="radio" name="m" id="gender">Female
+            <input type="radio" name="m" id=gender>Other<br><br>
+            Nationality:<select>
+                                <option></option>
+                                <option>Indian</option>
+                                <option>American</option>
+                                <option>Iran</option>
+                                <option>other</option>
+                        </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Contact Details:</legend>
+            Address:<input type="address" ><br><br>
+            Phone Number:<input type="number"> <br><br>
+            Email:<input type="email">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Educational Background:</legend>
+            High School Name:<input type="text"><br><br>
+            Year of Passing:<input type="number"><br><br>
+            Percentage/Grade:<input type="text"><br><br>
+            Preferred Course:<select>
+                                    <option></option>
+                                    <option>BBA</option>
+                                    <option>BCA</option>
+                                    <option>Bsc</option>
+                                    <option>BCom</option>
+                             </select>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Upload Document</legend>
+            Passport size Photo:<input type="file"><br><br>
+            10th Marksheet:<input type="file"><br><br>
+            12th Marksheet:<input type="file">
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Declaration</legend>
+            <input type="checkbox" id=declaration required> I hereby declare that all the information provided is true and correct.  School should not be held responsible for any errors in future.
+        </fieldset>
+        <br><br>
+        
+        <input type="submit" value="Submit Application" id="button" >
+        <input type="reset" value="Reset" id="button">
+    </div>
+    </form>
+
+</body>
+</html>
