@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        
+        .image{
+        
+
+            color:white;
+            padding:100px;
+            
+            background:url("D:\\analyze infotech\\CSS\\miniproject\\OIP (1).jpg");
+            background-size:800px 800px;
+            background-repeat: no-repeat;
+            text-align: center;
+            width:500px;
+            height:550px;
+            margin:0px;
+            align-items: center;
+        }
+
+
+
+
+        .blue{
+            position:absolute;
+            top:8px;
+            left:708px;
+            background-color:purple;
+            padding:100px;
+            width:500px;
+            height:550px;
+           
+        }
+
+
+
+        .black{
+            color:white;
+            background-color: black;
+            border-radius:10px;
+            width:400px;
+            padding:30px;
+            font-size:25px;
+        }
+
+
+
+        input{
+            width:350px;
+        }
+
+
+
+        button{
+            width:360px;
+            height:40px;
+            background-color:maroon;
+        }
+
+
+        h1,h2{
+            position:relative;
+            top:250px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="image">
+        <h1>Welcome Back!</h1>
+        <h2>Register to gain access to your<br> personalized dashboard and exlusive features</h2>
+    </div>
+
+    <div class="blue">
+        <div class="black">
+            <form onsubmit="return validateForm()">
+            <h3><i><u>Register</i></u></h3>
+            Username:<br><input type="text" id="uname" required ><br><br>
+            Email:<br><input type="email" id="email" required><br><br>
+            Password:<br><input type="password" id="password"><br><br>
+            Confirm Password:<br><input type="password" id="confpassword"><br><br><br>
+            <button onclick="buttonfunc()">Register</button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+        function buttonfunc(){
+            const uname=document.getElementById('uname').value;
+            const email=document.getElementById('email').value;
+            const pass=document.getElementById('password').value;
+            const conpass=document.getElementById('confpassword').value;
+           
+
+            
+            
+            if(email=="" || pass==""){
+                alert('Please Enter all the filds first!')
+            }
+            else if(!email.includes('@')){
+                alert('Please enter a valid email address!')
+                
+            }
+             else if(pass==conpass && email && uname){
+                alert("Response submitted!");
+            }
+            
+            else if(pass!=conpass){
+                alert("Password Mismatched!");
+            }
+           
+
+            
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
