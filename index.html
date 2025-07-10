@@ -1,199 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <style>
-        header{
-            height:300px;
-            padding:10px;
-            background:url("pic1.png");
+        .welcome {
+            display: flex;
+            flex-wrap: wrap;
+            
+
+        }
+
+        @media (max-width: 600px) {
+            .welcome {
+                flex: 1 1 100%;
+            }
+        }
+
+        header {
+            height: 300px;
+            padding: 10px;
+            background: url("D:\\analyze infotech\\JS\\bgimagesh.png");
             text-align: center;
             background-position: bottom;
-            background-repeat:no-repeat;
-            
-            color:black;
-            text-shadow:3px 3px 4px grey;
+            background-repeat: no-repeat;
+
+            color: black;
+            text-shadow: 3px 3px 4px grey;
         }
-        @keyframes zoom-in-out{
-                    0%,100%{transform:scale(1);}
-                    50%{transform:scale(2);}
+
+        @keyframes zoom-in-out {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(2);
+            }
         }
-        .header1{
-            
-            animation-name:zoom-in-out;
-            animation-direction:ease-in-out;
-            animation-duration:5s;
-            animation-iteration-count:infinite;
+
+        .header1 {
+
+            animation-name: zoom-in-out;
+            animation-direction: ease-in-out;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
 
         }
-        .navigation{
+
+        .navigation {
             text-align: center;
-            
-            padding:20px;
+
+            padding: 20px;
             background-color: black;
         }
-        a{
-            color:grey;
-            padding:20px;
-            font-size:20px;
+
+        a {
+            color: grey;
+            padding: 20px;
+            font-size: 20px;
         }
-        .about{
+
+        .about {
             text-align: center;
             background-color: lightgrey;
-            padding:10px;
-            width:80%;
+            padding: 10px;
+            width: 80%;
             position:relative;
             left:130px;
-            
-            
+
+
         }
-        .welcome{
-            box-shadow: 3px 3px 2px grey,-3px -3px 2px black;
-            text-align:left;
-            background-color:lightgray;
-            padding:20px;
-            margin:0px;
-            width:85%;
-            position:relative;
-            left:85px;
-            
-            
+
+        .welcome {
+            box-shadow: 3px 3px 2px grey, -3px -3px 2px black;
+            text-align: left;
+            background-color: lightgray;
+            padding: 20px;
+            margin: 0px;
+            width: 85%;
+            position: relative;
+            left: 85px;
+
+
         }
-        h2{
-            text-shadow:4px 4px 3px blueviolet;
+
+        h2 {
+            text-shadow: 4px 4px 3px blueviolet;
         }
-        .key{
-            border:10px groove white;
-            width:500px;
-            padding:10px;
-            box-shadow:15px 15px 10px grey;
-        }
-        .edu{
-            box-shadow:15px 15px 10px grey;
-            border:10px groove white;
-            width:500px;
+
+        .key {
+            border: 10px groove white;
+            width: 500px;
             padding: 10px;
-            position:relative;
-            top:0px;
-            left:580px;
-        }
-        .Facilities{
-            box-shadow:15px 15px 10px grey;
-            border:10px groove white;
-            width:500px;
-            padding:10px;
-
-        }
-        .leadership{
-            box-shadow:15px 15px 10px grey;
-            border:10px groove white;
-            width:500px;
-            padding:10px;
-            position:relative;
-            top:0px;
-            left:580px;
+            box-shadow: 15px 15px 10px grey;
+            margin:10px;
         }
 
-        footer{
+        .edu {
+            box-shadow: 15px 15px 10px grey;
+            border: 10px groove white;
+            width: 500px;
+            padding: 10px;
+            margin:10px;
+            
+        } 
+
+        .Facilities {
+            box-shadow: 15px 15px 10px grey;
+            border: 10px groove white;
+            width: 500px;
+            padding: 10px;
+            margin:10px;
+        }
+
+        .leadership {
+            box-shadow: 15px 15px 10px grey;
+            border: 10px groove white;
+            width: 500px;
+            padding: 10px;
+            margin:10px;
+        }
+
+        footer {
             background-color: darkgreen;
-            padding:20px;
-            color:white;
-            text-align:center;
+            padding: 20px;
+            color: white;
+            text-align: center;
         }
-        p{
+
+        p {
             font-size: 20px;
-            padding:20px;
-            margin-top:-10px;
+            padding: 20px;
+            margin-top: -10px;
         }
-       
-        
-      
-        
-       
-       
     </style>
 </head>
+
 <body>
 
 
 
 
-    <header >
+    <header>
         <h1 class="header1">Sacred heart Higher Secondary School, Sitapur</h1>
         <p>Let The Little Ones Come To Me.</p>
     </header>
-    
+
 
 
 
 
     <div class="navigation">
-    
-    
+
+
         <nav>
             <a href="#">Home</a>
-            <a href="courses.html">Courses</a>
-            <a href="Admissionform.html" >Admissions</a>
-            <a href="faculty.html">Faculty</a>
-            <a href="contact.html" >Contact Us</a>
-            <a href="ragistrationform.html">Registration Form</a>
+            <a href="D:\analyze infotech\CSS\miniproject\courses.html">Courses</a>
+            <a href="D:\analyze infotech\CSS\miniproject\Admissionform.html">Admissions</a>
+            <a href="D:\analyze infotech\CSS\miniproject\faculty.html">Faculty</a>
+            <a href="D:\analyze infotech\CSS\miniproject\contact.html">Contact Us</a>
+            <a href="D:\analyze infotech\CSS\miniproject\ragistrationform.html.html">Registration Form</a>
         </nav>
         <br>
-    
-    
+
+
         <div class="about">
             <h2>About the Institution</h2>
-            <p>Sacred Heart Higher Secondary School in Sitapur, Uttar Pradesh, is a co-educational institution affiliated with the Central Board of Secondary Education (CBSE). Established in 1954, it is managed by the Sacred Heart Catholic Education Society and has a long-standing reputation for academic excellence and character development.</p>
+            <p>Sacred Heart Higher Secondary School in Sitapur, Uttar Pradesh, is a co-educational institution
+                affiliated with the Central Board of Secondary Education (CBSE). Established in 1954, it is managed by
+                the Sacred Heart Catholic Education Society and has a long-standing reputation for academic excellence
+                and character development.</p>
         </div>
-         <br>
-    
-    
-        <div  class="welcome">
+        <br>
+
+
+        <div class="welcome">
             <div class="key">
-            <h2>🏫 Key Highlights:</h2>
-            <ul>
-                <li>Location: Gaura Barick Chawani, 4 Cantonment Road, Sitapur, Uttar Pradesh – 261001</li>
-                <li>Affiliation: CBSE (Affiliation No. 2132357)</li>
-                <li>Classes Offered: Nursery to Class 12</li>
-                <li>Streams Available: Science (PCM/PCB) and Commerce</li>
-                <li>Medium of Instruction: <b>English</b></li>
-                <li>Campus Area: 15,094 sq. meters with 54 classrooms and over 2,000 students enrolled</li>
-            </ul></div>
-            <br>     
+                <h2>🏫 Key Highlights:</h2>
+                <ul>
+                    <li>Location: Gaura Barick Chawani, 4 Cantonment Road, Sitapur, Uttar Pradesh – 261001</li>
+                    <li>Affiliation: CBSE (Affiliation No. 2132357)</li>
+                    <li>Classes Offered: Nursery to Class 12</li>
+                    <li>Streams Available: Science (PCM/PCB) and Commerce</li>
+                    <li>Medium of Instruction: <b>English</b></li>
+                    <li>Campus Area: 15,094 sq. meters with 54 classrooms and over 2,000 students enrolled</li>
+                </ul>
+            </div>
+            <br>
 
             <div class="edu">
-            <h2>🎯 Educational Philosophy:</h2>
-            <p>The school emphasizes holistic development, aiming to nurture character, competence,<br>
-                 conscience, compassion, and commitment in its students. It blends academic rigor with<br> 
-                 co-curricular activities to shape well-rounded individuals.</p></div>
-                 <br>
+                <h2>🎯 Educational Philosophy:</h2>
+                <p>The school emphasizes holistic development, aiming to nurture character, competence,<br>
+                    conscience, compassion, and commitment in its students. It blends academic rigor with<br>
+                    co-curricular activities to shape well-rounded individuals.</p>
+            </div>
+            <br>
 
 
-                <div class="Facilities">
-            <h2>🏆 Facilities & Activities:</h2>
-            <ul>
-                <li>Science and IT Labs</li>
-                <li>Libraries and Music Room</li>
-                <li>Indoor games, Yoga and Sports Facilities.</li>
-                <li>Events like Exhibitions, Annual Day, Youth Parliament and Summer Camps.</li>
-            </ul></div><br>
+            <div class="Facilities">
+                <h2>🏆 Facilities & Activities:</h2>
+                <ul>
+                    <li>Science and IT Labs</li>
+                    <li>Libraries and Music Room</li>
+                    <li>Indoor games, Yoga and Sports Facilities.</li>
+                    <li>Events like Exhibitions, Annual Day, Youth Parliament and Summer Camps.</li>
+                </ul>
+            </div><br>
 
             <div class="leadership">
-            <h2>👨‍🏫 Leadership:</h2>
-            <p>The school is led by experienced educators, with a strong focus on discipline, responsibility, and joyful learning.
-If you're considering schools in Sitapur, this one definitely stands out for its legacy and commitment to quality education.</p>
+                <h2>👨‍🏫 Leadership:</h2>
+                <p>The school is led by experienced educators, with a strong focus on discipline, responsibility, and
+                    joyful learning.
+                    If you're considering schools in Sitapur, this one definitely stands out for its legacy and
+                    commitment to quality education.</p>
 
-        </div></div>
+            </div>
+        </div>
 
     </div>
 
-    
-    
-    
-    
-    
+
+
+
+
+
     <footer>
         <p>&copy; Sacred Heart Higher Secondary School, Sitapur | All rights reserved.</p>
     </footer>
@@ -201,4 +236,5 @@ If you're considering schools in Sitapur, this one definitely stands out for its
 
 
 </body>
+
 </html>
